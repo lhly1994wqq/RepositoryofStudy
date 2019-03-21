@@ -1,0 +1,2 @@
+class=ReflectTest.DoSomething
+method=doSome1
