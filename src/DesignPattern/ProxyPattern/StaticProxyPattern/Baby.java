@@ -1,4 +1,4 @@
-package DesignPattern.StaticProxyPattern;
+package DesignPattern.ProxyPattern.StaticProxyPattern;
 
 public class Baby implements Human {
     @Override

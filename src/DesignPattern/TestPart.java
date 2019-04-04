@@ -1,13 +1,14 @@
 package DesignPattern;
 
-import DesignPattern.BuilderPattern.Book;
 import DesignPattern.FactoryPattern.Student;
 import DesignPattern.FactoryPattern.StudentClient;
 
-import DesignPattern.StaticProxyPattern.BabySitter;
-import DesignPattern.WrapperPattern.Baby;
-import DesignPattern.StaticProxyPattern.Human;
-import DesignPattern.WrapperPattern.Sitter;
+import DesignPattern.ProxyPattern.StaticProxyPattern.BabySitter;
+import DesignPattern.ProxyPattern.StaticProxyPattern.Human;
+import DesignPattern.WrapperPattern.Dresser;
+import DesignPattern.WrapperPattern.Girl;
+import DesignPattern.WrapperPattern.GirlFriend;
+import DesignPattern.WrapperPattern.OtherDresser;
 import org.junit.Test;
 
 public class TestPart {
@@ -20,9 +21,8 @@ public class TestPart {
 
     @Test
     public void WrapperTest(){
-//        Human human = new Sitter(new Baby());  //装饰模式可以看到你装饰之前的对象
-//        human.run();
-//        human.eat();
+        Girl girlfriend = new Dresser(new OtherDresser(new GirlFriend()));
+        girlfriend.beauty();
     }
 
     @Test

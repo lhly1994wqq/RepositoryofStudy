@@ -1,4 +1,4 @@
-package DesignPattern.StaticProxyPattern;
+package DesignPattern.ProxyPattern.StaticProxyPattern;
 
 public class BabySitter implements Human {
     private Baby baby;
